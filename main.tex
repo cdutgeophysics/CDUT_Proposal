@@ -1,0 +1,141 @@
+% ! TEX program = xelatex
+\documentclass{cdutproposal}
+% 盲审模式
+\usepackage{mathtools}
+\usepackage[most]{tcolorbox}
+\usepackage{geometry}
+\usepackage{enumitem}
+
+% Set margins to include tcolorbox frame
+\newlength{\framewidth}
+\setlength{\framewidth}{1.5pt}  % Frame thickness
+\newlength{\framepadding}
+\setlength{\framepadding}{5pt}  % Padding
+
+\geometry{
+  top=2.0cm,
+  bottom=\dimexpr 2.2cm+2\framewidth+2\framepadding,
+  left=2.4cm,
+  right=\dimexpr 2.4cm+2\framewidth+2\framepadding
+}
+
+\addbibresource{ref.bib}
+
+\begin{document}
+
+\thisfancypage{}{}
+\thispagestyle{empty}                                       % 清空页面格式
+\begin{center}
+\fontsize{14pt}{18pt}\selectfont {成都理工大学} \\
+学生学士学位论文开题报告
+\end{center}
+
+\begin{tcolorbox}[
+  blanker,  % Invisible box (only frame is drawn)
+  width=\textwidth,
+  height=0.8\textheight,
+  left=\framepadding,
+  right=\framepadding,
+%   top=\framepadding,
+  bottom=\framepadding,
+  borderline west={1.5pt}{0pt}{black},  % Left frame only
+  borderline east={1.5pt}{0pt}{black},
+  borderline north={1.5pt}{0pt}{black},
+  borderline south={1.5pt}{0pt}{black},
+  ]
+	\zihao{5}%
+	\hspace{-0.18cm}
+	\begin{tblr}{
+	width = 1.02\linewidth,  % 表格与文本同宽
+    colspec = {X[3.7,l]|X[3.7,l]|X[2.6,l]}, % 调整比例
+    hlines, % 水平线
+    vlines, % 垂直线
+	}
+	\SetCell[c=2]{l} 题目名称:基于xxxxxxxxxxxxxxxxxx研究与实现 && 题目类型： 应用研究 \\ 
+	\SetCell[c=2]{l} (Study on XXXXX) && 题目来源： 教师拟定 \\ 
+	学生姓名： 张三 & 学生学号： 202305050000 & 专业名称： 地球物理学 \\ 
+	导师姓名： 李四 & 专业职称： 教授 & 指导人数： 3 \\ 
+\end{tblr}
+
+
+\section{主要研究内容及预期成果:}
+\textbf{主要研究内容}： 
+\begin{enumerate}
+\item 系统查阅国内外关于...
+\item 学习...
+\end{enumerate}
+
+\textbf{预期成果}：
+\begin{enumerate}
+\item 系统掌握...；
+\item 实现基于...。
+\end{enumerate}
+
+\section{研究思路：}
+\textbf{研究方法}：
+
+\textbf{技术路线}：
+
+\textbf{可行性论证}：
+\hruleinbox
+\section{现有研究基础:}
+\textbf{毕业实习}：
+在成都理工大学校内，利用学校图书馆等线上资源进行文献收集调研，后续通过... 。
+
+\textbf{资料收集情况}：
+收集了前人关于... 。
+
+\textbf{空间设备仪器条件}：
+笔记本电脑(LAPTOP-PF2ZE6H6)、office软件、Matlab、Python等高级程序语言。
+
+
+\end{tcolorbox}
+
+\clearpage
+
+\section{主要参考文献目录及文献综述：}
+\subsection{立题意义}
+
+\subsection{国内外的研究现状}
+
+\subsection{参考文献}
+\printbibliography[title=主要参考文献]
+\clearpage
+
+\section{工作计划}
+\smallskip
+\begin{nomargin}[h]
+	\zihao{5}%
+\hspace{-0.15cm}
+	\begin{tblr}{
+	width = 1.005\linewidth,  % 表格与文本同宽
+    colspec = {X[3,l]|X[2,l]|X[1.5,l]|X[1.5,l]}, % 调整比例
+    hlines, % 水平线
+    vlines, % 垂直线
+}
+    \SetCell[c=1]{c}起止日期            & \SetCell[c=1]{c}主要任务               & \SetCell[c=1]{c}工作地点         & \SetCell[c=1]{c}联系方式       \\
+    2025年01月01日—01月31日 & 选题                  & 成都理工大学     & 151XXXX1750   \\
+    2025年02月01日—02月29日 & 资料收集、预研        & 成都理工大学     & 151XXXX1750   \\
+    2025年03月01日—03月31日 & 开题报告              & 成都理工大学     & 151XXXX1750   \\
+    2025年04月01日—05月10日 & 开展研究、撰写论文    & 成都理工大学     & 151XXXX1750   \\
+    2025年05月11日—05月31日 & 完成修改、定稿        & 成都理工大学     & 151XXXX1750   \\
+    2025年06月01日—06月09日 & 答辩                  & 成都理工大学     & 151XXXX1750   \\
+\end{tblr}
+\end{nomargin}
+
+\section{指导教师或指导小组评价（题目、工作要点、方法、进度及准备情况）：}
+\vspace{5cm}
+\quad\quad \quad\quad\quad \quad\quad\quad 指导教师（签名）：   \quad\quad\quad \quad\quad\quad      \quad\quad\quad                    年\quad\quad 月\quad\quad 日
+\hruleinbox
+\section{对学生开题报告的评审意见（是否同意进入毕业论文或毕业设计撰写阶段）：}
+\vspace{0.5cm}
+
+\quad\quad \quad\quad	同意指导教师意见，同意开题。
+
+\vspace{2.5cm}
+
+\quad\quad \quad\quad\quad \quad\quad\quad 教学系主任（签字）：    \quad\quad\quad \quad\quad\quad      \quad\quad                      年  \quad\quad 月 \quad\quad  日
+
+\end{document}
+
+% vim: ts=2 sw=2
