@@ -11,3 +11,6 @@
 ```
 $ xelatex main.tex
 ```
+
+# 致谢
+此模板基于<https://github.com/moetayuko/NPU_PhD_proposal>, 并根据成都理工大学教务处制定的开题报告格式进行调整，大体上和Word版本的一致
